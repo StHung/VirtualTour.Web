@@ -1,14 +1,14 @@
 // import "./App.css";
 import dynamic from "next/dynamic";
 
-const ThreeScene = dynamic(() => import("../app/components/ThreeScene"), {
+const VirtualTour = dynamic(() => import("./components/VirtualTour"), {
   ssr: false, // Tắt SSR để Three.js chỉ chạy trên client
 });
 
 function App() {
   return (
     <>
-      <ThreeScene />
+      <VirtualTour />
     </>
   );
 }
