@@ -76,6 +76,14 @@ const VirtualTour: React.FC = () => {
     };
     animate();
 
+    const handleResize = () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    };
+
+    window.addEventListener("resize", handleResize);
+
     return () => {
       if (mountRef.current) {
         mountRef.current.removeChild(renderer.domElement);
