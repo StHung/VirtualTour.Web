@@ -33,8 +33,6 @@ const ThreeScene: React.FC = () => {
     scene.add(sphere);
 
     const controls = new OrbitControls(camera, renderer.domElement);
-    // controls.enableDamping = true;
-    // controls.dampingFactor = 0.05;
     controls.rotateSpeed = 0.3;
     controls.maxDistance = 1000;
     controls.minDistance = 0.5;
