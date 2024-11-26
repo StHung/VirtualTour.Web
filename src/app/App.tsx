@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 import dynamic from "next/dynamic";
 
 const ThreeScene = dynamic(() => import("../app/components/ThreeScene"), {
